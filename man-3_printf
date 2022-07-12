@@ -1,0 +1,31 @@
+.TH man 3 "12 July 2022" "0.01" "_printf man page"
+.SH NAME
+.B _printf
+- This is a locally generated funtion that works like the C printf function
+.SH SYNOPSIS
+The use of this funtion applies when the directive #include "main.h" is used
+In the function, 'format' is a character string with zero or more directives
+.SH DESCRIPTION
+_printf() is a function that prints output according to a format as specified
+below. The function writes output on the standard output stream, stdout.
+.SH
+When using _printf() function you have to use characters preceded by % symbol.
+.RS 3
+%c: Used when printing characters
+.RS 0
+%s: Used when printing strings
+.RS 0
+%d: Used when printing integers of type int that have max or min size
+.RS 0
+%i: Used when printing integers of type int that have max or min size
+.RS 0
+%b: Used when printing a number in binary format
+.SH RETURN VALUES
+The _printf() returns the number of characters printed excluding the null byte
+used to end output to strings
+.SH SEE ALSO
+.I printf(3)
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Wamata Muriu
